@@ -1,5 +1,5 @@
 body {
-  background: #b2f6cf;
+  background: #97f9c3;
 }
 
 h1 {
@@ -114,7 +114,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 250px 0 250px;
+  margin: 25px 250px 25px 250px;
   border-radius: 25px;
 }
 
