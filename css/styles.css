@@ -111,20 +111,19 @@ h1 {
 }
 
 .am-card {
-  height: 900px;
-  width: 1500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0 0 250px;
+  margin: 50px 250px 0 250px;
   border-radius: 25px;
+  border: 3px solid blue;
 }
 
 .am-card-container img {
-  height: 90%;
-  margin-right: 230px;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 25px;
-  border: 3px solid blue;
+  border: 3px solid yellowgreen;
 }
 
 /* Fork & Spoon page css */
@@ -132,7 +131,6 @@ h1 {
 .carousel-item {
   width: 90%;
   height: 100%;
-  min-height: 400px;
   margin-left: 90px;
   display: flex;
   justify-content: center;
@@ -166,7 +164,7 @@ h1 {
 
 .btn {
   border-radius: 25px;
-    box-shadow: 10px 10px 10px #827d7d, 
+  box-shadow: 10px 10px 10px #827d7d, 
   -8px -8px 11px #ffffff;
 }
 
@@ -198,7 +196,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-    box-shadow: 10px 10px 10px #827d7d, 
+  box-shadow: 10px 10px 10px #827d7d, 
   -8px -8px 11px #ffffff;
 }
 
@@ -214,9 +212,13 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-
+.am-card {
+  width: 50%;
+}
 }
 
 @media screen and (max-width: 600px) {
-
+.am-card {
+    width: 50%;
+  }
 }
