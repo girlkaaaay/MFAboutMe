@@ -1,42 +1,53 @@
 body {
-  background: #97f9c3;
+  background: linear-gradient(to top left, #5bb679, #cff0de);
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-container {
+  position: relative;
+  height: 200px;
+}
+
+.header-logo img {
+  position: absolute;
+  width: 8%;
+  margin: 25px 0 0 25px;
+  box-shadow: 10px 10px lightgray;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
+  border-radius: 25px;
+  border: 2px solid rgb(138, 136, 136);
+}
+
+.title-container {
+  position: absolute;
+  width: 550px;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: 60px;
+}
+
+.header-container h1 {
+  position: absolute;
   color: #b0b0b0;
-  padding-top: 60px;
   font-family: fantasy;
   text-shadow: 3px 3px #827d7d;
-  margin: 25px 25px 25px 25px;
 }
 
 .navbar {
   font-family: fantasy;
-  margin: 25px 25px 25px 25px;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  margin: 25px;
+  box-shadow: 5px 5px 5px #827d7d, -5px -5px 8px #ffffff;
   border-radius: 25px;
-}
-
-.navbar-brand img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-  box-shadow: 10px 10px lightgray;
-  z-index: 100;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
-  border-radius: 15px;
-  border: 2px solid black;
 }
 
 .navbar a {
   color: rgb(81, 79, 79);
   margin: 30px;
   border-radius: 25px;
+}
+
+.navbar-toggler-icon {
+  stroke: rgba(0, 0, 0, 0.5);
 }
 
 /* home page css */
@@ -50,13 +61,13 @@ h1 {
   font-family: fantasy;
   color: rgb(26, 26, 26);
   background: transparent;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
 }
 
 .card-container {
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -69,8 +80,8 @@ h1 {
   justify-content: center;
   align-items: center;
   color: 262626;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
   font-family: "Architects Daughter", cursive;
   font-family: "Caveat", cursive;
   border-radius: 10px;
@@ -81,16 +92,18 @@ h1 {
   width: 100%;
   height: 40vw;
   object-fit: cover;
-  border-radius: 5px 5px 5px 5px;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;}
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
+}
 
 /* about me page css */
 
 .aboutme {
+  padding: 5px;
   margin: 25px 100px 25px 100px;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
   font-family: "Architects Daughter", cursive;
   font-family: "Caveat", cursive;
   font-family: "Kalam", cursive;
@@ -106,43 +119,44 @@ h1 {
   border-radius: 25px;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
 }
 
 .am-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 250px 25px 250px;
   border-radius: 25px;
+  margin: 50px 90px 50px 90px;
 }
 
 .am-card-container img {
-  max-height: 100%;
-  max-width: 100%;
   border-radius: 25px;
 }
 
 /* Fork & Spoon page css */
 
 .carousel-item {
-  width: 90%;
-  height: 100%;
-  margin-left: 90px;
   display: flex;
   justify-content: center;
+  align-self: center;
   border-radius: 25px;
-  margin-top: 75px 0 175px 0;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  margin-top: 75px;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
+}
+
+.carousel-inner {
+  width: 98%;
+  margin-left: 15px;
 }
 
 .carousel-inner img {
   height: 100vh;
   width: 100%;
-  z-index: 0;
   border-radius: 25px;
+  margin: 0;
 }
 
 /* jumbotron */
@@ -153,8 +167,8 @@ h1 {
   margin: 25px 50px 25px 50px;
   font-family: "Architects Daughter", cursive;
   font-family: "Caveat", cursive;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
   background: transparent;
   text-shadow: 3px 3px #827d7d;
   color: #b0a9a9;
@@ -162,8 +176,8 @@ h1 {
 
 .btn {
   border-radius: 25px;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
 }
 
 h2 {
@@ -176,9 +190,14 @@ h2 {
 }
 
 .card {
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 50px 20px;
   border-radius: 25px;
   background-color: transparent;
+  display: flex;
+}
+
+.card img {
+  border-radius: 25px;
 }
 
 /* footer */
@@ -186,16 +205,13 @@ h2 {
 footer {
   height: auto;
   width: auto;
-  margin: 0;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 25px;
+  margin: 25px 50px 25px 50px;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
 }
 
 .fa {
@@ -205,18 +221,43 @@ footer {
   border-radius: 20%;
   color: rgb(79, 135, 247);
   border-radius: 20px;
-    box-shadow: 10px 10px 10px #827d7d, 
-  -8px -8px 11px #ffffff;
+  box-shadow: 5px 5px 5px #827d7d,
+  -5px -5px 8px #ffffff;
 }
 
-@media screen and (max-width: 992px) {
-.am-card {
-  width: 50%;
+@media only screen and (max-width: 1180px) {
+  .am-card-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 49px;
+  }
+  footer {
+    margin-left: 50px;
+  }
 }
-}
-
-@media screen and (max-width: 600px) {
-.am-card {
+@media only screen and (max-width: 940px) {
+  .am-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .am-card {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 150px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .am-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 180px;
+  }
+  .header-logo img {
+    height: 45%;
+    width: 15%;
   }
 }
